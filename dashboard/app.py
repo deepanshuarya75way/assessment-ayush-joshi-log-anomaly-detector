@@ -17,6 +17,10 @@ import sys
 
 import pandas as pd
 import streamlit as st
+from src.feedback import(
+    save_feedback,
+    create_training_dataset
+)
 
 # Allow importing from ../src
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
